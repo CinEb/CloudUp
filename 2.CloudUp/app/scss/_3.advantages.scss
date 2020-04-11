@@ -1,0 +1,127 @@
+.cloud-up{
+  //===== Advantages block
+  .advantages {
+    padding-top: 64px;
+    background-color: $advantages-bg-color;
+    background-image: url('../img/advantages-bg.svg');
+    background-repeat: no-repeat;
+    background-position: right 65%;
+
+    &-box{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 76px;
+
+      &--reverse{
+        display: flex;
+        flex-flow: row-reverse;
+
+        //.advantages-box__info {
+        //  order: 1;
+        //}
+
+        .advantages-box__info {
+          background-image: url('../img/title-bg-2.svg');
+          background-position: 26px 135px;
+        }
+      }
+
+      &__info{
+        max-width: 455px;
+        padding-top: 60px;
+        background-image: url('../img/title-bg-1.svg');
+        background-repeat: no-repeat;
+        background-position: 22px 76px;
+
+        &--bg3 {
+          background-image: url('../img/title-bg-3.svg');
+          background-position: 0 106px;
+        }
+      }
+
+      &__title{
+        @extend %title;
+        padding: 68px 0 15px 48px;
+
+      }
+
+      &__text{
+        padding-left: 48px;
+        color: $text-color;
+        margin-right: -14px;
+        p{
+          margin: 12px 0;
+        }
+      }
+
+      &__images{
+
+      }
+    }
+
+    //===== @media
+    @media(max-width: 1602px){
+      background-image: none;
+    }
+
+    @media(max-width: 1190px){
+      &-box{
+        justify-content: space-around;
+        &__images {
+          text-align: center;
+          img{width: 80%;}
+        }
+
+        &__info{
+          padding-right: 30px;
+        }
+        &--reverse{
+          .advantages-box {&__title, &__text{ padding-left: 20px;}
+          }
+        }
+      }
+    }
+
+    @media(max-width: 1080px) {
+
+      .advantages-box {
+        &__info {
+          padding-top: 10px;
+        }
+
+        &__images img {
+          width: 70%;
+          margin-top: 40px;
+        }
+      }
+    }
+
+    @media(max-width: 858px){
+      .advantages-box{
+        flex-wrap: wrap;
+        padding: 10px;
+
+        &__info{
+          max-width: 100%;
+          padding: 0;
+        }
+
+        .advantages-box__title, .advantages-box__text{padding: 0;}
+
+        &__images img{
+          width: 100%;
+        }
+      }
+    }
+
+    @media(max-width: 570px){
+      padding-top: 32px;
+      .advantages-box__title {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    //===== @media;
+
+  }
+}

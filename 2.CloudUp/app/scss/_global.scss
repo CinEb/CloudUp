@@ -1,0 +1,46 @@
+//===== Reset browser
+@import 'reset';
+//===== Slick slider
+@import 'slick';
+//===== Fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+//font-family: 'Source Sans Pro', sans-serif;
+
+$white: #fff;
+$title-color: #202020;
+$text-color: #272727;
+$btn-text-color: #250F8A;
+$request-btn-color: #FFCA00;
+$advantages-bg-color: #f4f9fd;
+$light-blue-color: #b4ddfc;
+
+%title{
+  color: $title-color;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  text-align: center;
+}
+
+//===== Global Style
+*{box-sizing: border-box;}
+
+.cloud-up{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  .title {
+    @extend %title;
+  }
+}

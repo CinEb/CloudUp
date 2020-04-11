@@ -1,0 +1,40 @@
+.cloud-up{
+  //===== Footer Block
+  footer {
+    .footer {
+      &__wrapper {
+        height: 61px;
+        display: flex;
+        justify-content: space-between;
+        color: $text-color;
+        padding: 0 55px;
+      }
+
+      &__links {
+        margin: auto 0;
+        a+a{margin-left:20px;}
+      }
+
+      &__copyright{
+        margin: auto 0;
+      }
+    }
+
+    //===== @media
+    @media(max-width: 685px){
+      .footer{
+        &__wrapper {
+          display: block;
+          text-align: center;
+        }
+        &__links{
+          margin: 10px 0;
+        }
+        &__copyright{
+          margin: 10px 0;
+        }
+      }
+    }
+    //===== @media;
+  }
+}
